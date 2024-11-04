@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background-color: darkslategray;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#drum-area {
+  display: flex;
+  gap: 10px;
+}
+
+.drums {
+  width: 75px;
+  height: 75px;
+  border: 2px solid white;
+}
