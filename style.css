@@ -13,7 +13,12 @@ h1 {
 }
 
 body {
-  background-color: darkslategray;
+  background-color: rgb(15, 15, 15);
+  background-image: url(images/Gemini_Generated_Image_9pzck09pzck09pzc.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: brightness(0.3);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -27,7 +32,7 @@ body {
   display: flex;
   gap: 20px;
   align-items: end;
-  margin-bottom: 10rem;
+  margin-bottom: 20rem;
 }
 
 .drum-combined {
