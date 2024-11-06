@@ -27,10 +27,14 @@ for (let i = 0; i < drumkit.length; i += 2) {
   drumTitle.textContent = drumkit[i];
   keyShort.textContent = drumkit[i + 1].toUpperCase();
   drumDiv.id = drumkit[i].toLowerCase();
+
   drumDiv.classList.add("drums");
   drumCombined.classList.add("drum-combined");
 
-  // drumDiv.style.marginBottom = `${i * 2}px`;
+  // Raise drums to match finger and keyboard shortcut layout
+  if (i === 2 || i === 4 || i === 10 || i === 12) {
+    drumCombined.style.marginBottom = "65px";
+  }
 
   // Click event listener
   drumDiv.addEventListener("click", () => {
@@ -62,22 +66,5 @@ window.addEventListener("keydown", (e) => {
     setTimeout(() => {
       drumId.classList.add("drum-hit");
     }, 1);
-
-    // drumId.addEventListener("");
-
-    // let activate = 100;
-
-    // const flash = () => {
-    //   console.log(activate);
-    //   if (activate === 0) {
-    //     clearInterval(interval);
-    //   } else {
-    //     activate--;
-    //     drumId.style.backgroundColor = `rgba(255, 255, 255, ${activate}%)`;
-    //     drumId.style.width = `${75 + activate / 10}px`;
-    //     drumId.style.height = `${75 + activate / 10}px`;
-    //   }
-    // };
-    // const interval = setInterval(flash, 0.5);
   }
 });

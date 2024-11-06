@@ -1,8 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  color: white;
+}
+
+:root {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+h1 {
+  font-weight: 400;
 }
 
 body {
@@ -10,26 +17,26 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 5rem;
 }
 
 #drum-area {
   display: flex;
-  gap: 10px;
-  border: 2px solid yellow;
-  align-items: center;
-  height: 20vh;
+  gap: 20px;
+  align-items: end;
+  margin-bottom: 10rem;
 }
 
 .drum-combined {
   width: 75px;
+  height: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 5px;
-  border: 2px solid red;
 }
 
 .drums {
@@ -38,10 +45,6 @@ body {
   border: 2px solid white;
   background-color: rgba(255, 255, 255, 20%);
   border-radius: 50%;
-}
-
-#kick {
-  /* position: absolute; */
 }
 
 .drum-hit {
