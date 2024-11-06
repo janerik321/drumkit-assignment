@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -21,6 +22,16 @@ body {
   height: 20vh;
 }
 
+.drum-combined {
+  width: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  border: 2px solid red;
+}
+
 .drums {
   width: 75px;
   height: 75px;
@@ -29,11 +40,8 @@ body {
   border-radius: 50%;
 }
 
-.drum-combined {
-  width: 75px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#kick {
+  /* position: absolute; */
 }
 
 .drum-hit {

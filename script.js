@@ -22,13 +22,15 @@ const drumkit = [
 for (let i = 0; i < drumkit.length; i += 2) {
   const drumDiv = document.createElement("div");
   const drumTitle = document.createElement("p");
+  const keyShort = document.createElement("h3");
   const drumCombined = document.createElement("div");
-  drumTitle.textContent = `${drumkit[i]} (${drumkit[i + 1]})`;
+  drumTitle.textContent = drumkit[i];
+  keyShort.textContent = drumkit[i + 1].toUpperCase();
   drumDiv.id = drumkit[i].toLowerCase();
   drumDiv.classList.add("drums");
   drumCombined.classList.add("drum-combined");
 
-  drumDiv.style.marginBottom = `${i * 2}px`;
+  // drumDiv.style.marginBottom = `${i * 2}px`;
 
   // Click event listener
   drumDiv.addEventListener("click", () => {
@@ -42,7 +44,7 @@ for (let i = 0; i < drumkit.length; i += 2) {
     }, 1);
   });
 
-  drumCombined.append(drumTitle, drumDiv);
+  drumCombined.append(drumTitle, drumDiv, keyShort);
   drumArea.append(drumCombined);
 }
 
